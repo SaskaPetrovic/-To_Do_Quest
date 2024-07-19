@@ -4,7 +4,7 @@ class UsersController < ApplicationController
 
   def update
     if current_user.update(user_params)
-      redirect_to dashboard_path, notice: 'Profile was successfully updated.'
+      redirect_to dashboard_path, notice: 'Profile was successfully updated !'
     else
       render 'dashboard/index'
     end
