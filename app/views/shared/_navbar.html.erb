@@ -16,7 +16,7 @@
         <% if @user.present? %>
           <%= link_to @user.username, "#", class: "nav-link" %>
         <% end %>
-        <h6><%= link_to "LV. #{@user.level}", "#", class: "nav-link" %></h6>
+        <h6><%= link_to "LV #{@user.level}", "#", class: "nav-link" %></h6>
       </div>
     </div>
 
